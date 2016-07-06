@@ -12,19 +12,19 @@ package managers split the runtime from the compile time.
 
 ## Linux Debian-style (apt)
 
-sudo apt install libgsl-dev       # install package(s)
-dpkg -S /usr/bin/ls               # which packate does /bin/ls belong to?
-dpkg -L coreutils                 # lists files in a package
-dpkg --list                       # lists all packages you have
+  sudo apt install libgsl-dev       # install package(s)
+  dpkg -S /usr/bin/ls               # which packate does /bin/ls belong to?
+  dpkg -L coreutils                 # lists files in a package
+  dpkg --list                       # lists all packages you have
 
 
 ## Linux Redhat-style (yum)
 
-sudo yum install NAME1            # install packages
+  sudo yum install NAME1            # install packages
 
-rpm -qf /bin/ls                   # which packate does /bin/ls belong to?
-rpm -ql coreutils                 # lists files in a package
-rpm -qa                           # lists all packages you have
+  rpm -qf /bin/ls                   # which packate does /bin/ls belong to?
+  rpm -ql coreutils                 # lists files in a package
+  rpm -qa                           # lists all packages you have
 
 ## Mac HomeBrew-style
 
