@@ -29,6 +29,9 @@ Here is an example for linux 64 bit:
    conda install numpy scipy matplotlib
    conda install yt
    conda install jupyter
+   conda install astropy pandas scikit-learn glueviz
+   conda install anaconda-client
+
 
 Now you can issue the command (an alias "jn" or just 'j" would seem to make a lot of sense here)
 
