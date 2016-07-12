@@ -1,0 +1,37 @@
+Here's a crash-course in making your own python toolkit via miniconda:
+
+Although it is recommended to install the full anaconda system via
+
+this is an alternative if you want to cherry pick your modules and
+start with a very small python system.
+
+
+
+
+Head over to
+     	  http://conda.pydata.org/miniconda.html
+and grab the latest installer and follow instructions
+
+Here is an example for linux 64 bit:
+
+   wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+   bash Miniconda3-latest-Linux-x86_64.sh
+   ...
+	I installed it in:   /data2/teuben/python/miniconda3
+	This modified my PATH as follows in the .bashrc file:
+
+	export PATH="/data2/teuben/python/miniconda3/bin:$PATH"
+
+   python --version                         (3.5.2)
+   conda install ipython
+   ipython --version                        (4.2.0)
+   conda install numpy scipy matplotlib
+   conda install yt
+   conda install jupyter
+
+Now you can issue the command (an alias "jn" or just 'j" would seem to make a lot of sense here)
+
+    jupyter notebook
+
+and in your browser you will now see python notebooks (ipynb files) if you are in the right
+directory.
