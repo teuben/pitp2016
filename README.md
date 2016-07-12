@@ -14,7 +14,7 @@ package managers split the runtime from the compile time.
 
 ```
   sudo apt install libgsl-dev       # install package(s)
-  dpkg -S /usr/bin/ls               # which packate does /bin/ls belong to?
+  dpkg -S /bin/ls                   # which packate does /bin/ls belong to?
   dpkg -L coreutils                 # lists files in a package
   dpkg --list                       # lists all packages you have
 ```
@@ -37,6 +37,12 @@ package managers split the runtime from the compile time.
 A virgin mac doesn't have a package manager.
 Before anything, you will first need to install Xcode.
 
+Brew stores files in /usr/local/Cellar
+
+```
+  brew install NAME1                # install packages
+  brew list                         # lists all packages you have
+```
 
 ## Mac MacPorts-style
 
