@@ -43,6 +43,9 @@ ipython
 	matplotlib
 	yt
 	astropy
+	pandas
+	scikit-learn
+	glueviz
 
 
 ffmpeg -version
@@ -85,3 +88,13 @@ d3js
 	This is a JavaScript based visualization toolkit. Great to present your research online
 	for outreach, collaborators etc.
 	See https://d3js.org/
+
+
+athena
+	more instructions will follow
+
+harm
+	more instructions will follow
+
+iharm
+	more instructions will follow
