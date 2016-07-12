@@ -1,16 +1,17 @@
 Here's a crash-course in making your own python toolkit via miniconda:
 
 Although it is recommended to install the full anaconda system via
-
+            https://www.continuum.io/
 this is an alternative if you want to cherry pick your modules and
 start with a very small python system.
 
 
 
 
-Head over to
+For miniconda, head over to
      	  http://conda.pydata.org/miniconda.html
-and grab the latest installer and follow instructions
+and grab the latest installer and follow instructions for your
+architecture.
 
 Here is an example for linux 64 bit:
 
