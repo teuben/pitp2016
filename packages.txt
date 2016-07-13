@@ -1,10 +1,12 @@
 
 
-The following commands should be working for you at the unix shell, if not
-see if you can install them with your favorite package tool.
-This file is also part of our pitp2016 git repo (see below on how to update
-this) as "packages.txt"
+The following packages we are likely to need at PITP 2016. Each UNIX
+distro (linux and mac alike) have different ways how to install
+them. Some example are given here how to do them.
 
+
+#--------------------------------------------------------------------------------
+UNIX COMMANDS:
 
 
 git
@@ -28,19 +30,6 @@ gfortran
 	also, e.g. "clang", the Intel compiler and the PGI compiler.
 	The C compiler needs to suport OpenMP (which gcc does)
 
-
-openmpi 
-	This is one of the ways to implement MPI, and probably our preferred way.
-	On Ubuntu/Linux:     apt install openmpi-bin libopenmpi-dev libhdf5-openmpi-dev
-
-	On mac/homebrew:     brew install gcc
-	   		     brew install openmpi --enable-mpi-thread-multiple
-			     brew install hdf5 --with-fortran --with-mpi
-
-mpich
-	This is another MPI library:
-	On Ubuntu/Linux:     apt install mpich
-	but not experimented with this.
 
 python
 ipython
@@ -66,10 +55,6 @@ ffmpeg
        In ubuntu linux:
            sudo apt install ffmpeg imagemagick vlc
 
-gsl
-	This is the Gnu Scientific Library. Use your package manager to install it, e.g.
-	In Ubuntu linux:
-            sudo apt install libgsl-dev
 
 
 
@@ -80,6 +65,32 @@ ygraph
 	Another simple and basic graph plotter. 
 	See for example http://cactuscode.org/documentation/visualization/yGraph/
 
+visit
+        A more graphical based visualization environment
+	See
+	    https://wci.llnl.gov/simulation/computer-codes/visit/
+
+
+#--------------------------------------------------------------------------------
+UNIX LIBRARIES:
+
+openmpi 
+	This is one of the ways to implement MPI, and probably our preferred way.
+	On Ubuntu/Linux:     apt install openmpi-bin libopenmpi-dev libhdf5-openmpi-dev
+
+	On mac/homebrew:     brew install gcc
+	   		     brew install openmpi --enable-mpi-thread-multiple
+			     brew install hdf5 --with-fortran --with-mpi
+
+mpich
+	This is another MPI library:
+	On Ubuntu/Linux:     apt install mpich
+	but not experimented with this yet, as openmpi seems to work.
+
+gsl
+	This is the Gnu Scientific Library. Use your package manager to install it, e.g.
+	In Ubuntu linux:
+            sudo apt install libgsl-dev
 
 yt
 	Versatile visualization environment in python. Probably easiest to install within
@@ -89,11 +100,6 @@ yt
 		pip install yt
 	depending which type of python environment you have
 	
-
-visit
-        A more graphical based visualization environment
-	See
-	    https://wci.llnl.gov/simulation/computer-codes/visit/
 
 d3js
 	This is a JavaScript based visualization toolkit. Great to present your research online
