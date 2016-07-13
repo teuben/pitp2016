@@ -7,15 +7,14 @@ this) as "packages.txt"
 
 
 
-git --version
-
+git
 	we also use this to distribute notes, scripts, software for PITP 2016.
-	To get a copy:
+	To get a copy of the PITP notes:
 
 	   git clone http://github.com/teuben/pitp2016
 	   cd pitp2016
 
-	and to get a fresh version with the latest updates:
+	and to get a updated version with the latest additions:
 
 	   cd pitp2016
 	   git pull
@@ -30,6 +29,18 @@ gfortran
 	The C compiler needs to suport OpenMP (which gcc does)
 
 
+openmpi 
+	This is one of the ways to implement MPI, and probably our preferred way.
+	On Ubuntu/Linux:     apt install openmpi-bin libopenmpi-dev libhdf5-openmpi-dev
+
+	On mac/homebrew:     brew install gcc
+	   		     brew install openmpi --enable-mpi-thread-multiple
+			     brew install hdf5 --with-fortran --with-mpi
+
+mpich
+	This is another MPI library:
+	On Ubuntu/Linux:     apt install mpich
+	but not experimented with this.
 
 python
 ipython
@@ -48,7 +59,7 @@ ipython
 	glueviz
 
 
-ffmpeg -version
+ffmpeg
        This tool creates movies from still images that simulations often create on the fly.
        Great for presentations. We will use this for a few of the homeworks.
 
