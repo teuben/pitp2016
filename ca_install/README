@@ -1,0 +1,15 @@
+This is the meta directory to aid in installing the ca_packages for PITP2009
+See: http://carma.astro.umd.edu/wiki/index.php/Ca_install
+
+typical invocation:
+    configure 
+    make
+    make install
+
+
+The 'config' subdirectory is a set of m4 macros that were largely
+taken from the xoopic/xgrafic package. 
+
+In case of cleanup you'll need to do this
+
+    config/cleanconf.sh ; config/regenconf.sh

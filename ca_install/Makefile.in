@@ -1,0 +1,36 @@
+# simple top level Makefile, derived from Makefile.in
+# At this stage we are not yet using automake
+#
+
+
+#  this directive allows you optionally to include a file locally modified variables
+-include makedefs
+
+VERSION := `cat VERSION`
+
+help:
+	@echo Top level makefile for ca_packages:  VERSION=$(VERSION)
+
+
+status:
+	./config.status
+
+
+A = :pserver:anonymous@cvs.astro.umd.edu:/home/cvsroot
+export_version:
+	@echo Building export tar for version $(VERSION)
+	(rm -rf export_tmp ca_install_$(VERSION);\
+	 cvs -Q -d $(A) co -d export_tmp ca_install;\
+	 mv export_tmp ca_install_$(VERSION);\
+	 tar zcf ca_install_$(VERSION).tar.gz ca_install_$(VERSION);\
+	 rm -rf ca_install_$(VERSION))
+
+export:
+	@echo Building export tar for version $(VERSION)
+	(rm -rf export_tmp; \
+	 mkdir export_tmp; \
+	 cd export_tmp; \
+	 cvs -Q -d $(A) co ca_install;\
+	 tar zcf ../ca_install.tar.gz ca_install;\
+	 cd ..;\
+	 rm -rf export_tmp)
