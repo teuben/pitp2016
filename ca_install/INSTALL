@@ -1,0 +1,42 @@
+
+some of this can also be found here:
+      http://carma.astro.umd.edu/wiki/index.php/Ca_install:  
+
+step 0
+-------
+
+grab this software. Should be in ftp://ftp.astro.umd.edu/progs/carma/ca_install.tar.gz
+e.g.this gets the tar file, and also cvs updates it with the latest release. Check
+the VERSION file 
+	
+	wget ftp://ftp.astro.umd.edu/progs/carma/ca_install.tar.gz
+	tar zxf ca_install.tar.gz
+	cd ca_install
+	cvs login
+	cvs up
+
+
+step 1:
+-------
+confirm you have basic things installed
+
+
+	./configure
+
+
+
+step 2:
+-------
+test a bunch of hello world programs
+
+	cd Hello_World
+	make -i tests
+	
+
+
+step 2a:
+--------
+
+you can test predefined binaries, e.g. (ARCH= is optional)
+
+	make test2 ARCH=Linux_i686
