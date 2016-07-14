@@ -1,0 +1,10 @@
+# simple
+
+CC  = @CC@
+FC  = @F77@
+F77 = @F77@
+CXX = @CXX@
+
+#
+FLIBS = @FLIBS@
+F77_CMAIN_FFLAGS = @F77_CMAIN_FFLAGS@
