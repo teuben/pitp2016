@@ -108,10 +108,13 @@ d3js
 
 
 athena
-	more instructions will follow
+	(Stone) more instructions will follow
 
 harm
 	more instructions will follow
 
-iharm
-	more instructions will follow
+iharm2d_v3
+	(Gammie) more instructions will follow
+
+tristan
+	(Spitovsky) more instructions will follow
