@@ -1,0 +1,10 @@
+some sample docs:
+
+
+http://openmp.org/mp-documents/omp-hands-on-SC08.pdf
+
+
+
+gcc:          gcc -fopenmp -o hello hello.c
+pgi:              -mp
+intel:        icc -openmp -o hello hello.c
