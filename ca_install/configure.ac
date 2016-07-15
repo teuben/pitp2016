@@ -71,11 +71,13 @@ AC_CHECK_SIZEOF(long double)
 
 
 
-dnl builtin(include,config/hdf5.m4)
+builtin(include,config/hdf5.m4)
+
+builtin(include,config/gsl.m4)
 
 dnl builtin(include,config/fftw.m4)
 
-dnl builtin(include,config/python.m4)
+builtin(include,config/python.m4)
 
 builtin(include,config/mpicompilers.m4)
 
