@@ -1,0 +1,37 @@
+LMA mpi:
+
+lamboot
+./mpihello
+mpirun -np 4 mpihellp
+lamwipe
+
+
+OpenMPI:
+
+/usr/bin/ompi_info
+/usr/bin/orted
+/usr/bin/orterun
+/usr/share/openmpi/1.2.4-gcc/bin32/mpicc
+
+
+MPICH:
+
+
+
+
+Many MPI based machines use a queuing system, e.g. in SGE there is the
+qsub command, you would work via a shell script with $# directives The
+script would be submitted via:
+
+	qsub  your_script.sh
+
+#!/bin/bash
+#$ -N my_job_name
+#$ -pe orte 8
+#$ -cwd
+#$ -V
+#$ -R y
+
+cd /home/pitp0XX/Gadget-2.0.4/Gadget2
+mpirun ./Gadget2 input.param
+
