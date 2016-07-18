@@ -4,6 +4,10 @@ The following packages we are likely to need at PITP 2016. Each UNIX
 distro (linux and mac alike) have different ways how to install
 them. Some example are given here how to do them.
 
+You can find copied of codes on either our published URL's , or
+within the directory /data/pitp on the IAS cluster where all participants
+have an account.
+
 
 #--------------------------------------------------------------------------------
 UNIX COMMANDS:
@@ -120,6 +124,7 @@ d3js
 
 athena
 	(Stone) more instructions will follow
+	Use athena4.2.tar.gz
 
 harm
 	more instructions will follow
