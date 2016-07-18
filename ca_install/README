@@ -8,7 +8,11 @@ typical invocation:
 
 
 The 'config' subdirectory is a set of m4 macros that were largely
-taken from the xoopic/xgrafic package. 
+taken from the xoopic/xgrafic package.
+
+Latest version:
+http://ptsg.egr.msu.edu/pub/codes/xgrafix/xgrafix-2.70.5.tar.gz
+http://ptsg.egr.msu.edu/pub/codes/xoopic/xoopic-2.70.2.tar.gz
 
 In case of cleanup you'll need to do this
 
