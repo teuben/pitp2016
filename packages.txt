@@ -96,9 +96,20 @@ yt
 	Versatile visualization environment in python. Probably easiest to install within
 	your python environment via the commands
 		conda install yt
-        or
+        or 
 		pip install yt
-	depending which type of python environment you have
+	depending which type of python environment you have.
+
+	The new yt 3.3-dev (development) series can be installed as follows:  
+
+	        conda install -c http://use.yt/with_conda yt                 (unix)
+		conda install -c http://conda.anaconda.org/jzuhone yt        (windows)
+		
+  	or if you have another python stack (or just want to use pip):
+	# build from source on macOS or Linux:
+	  	pip install hg+https://bitbucket.org/yt_analysis/yt#egg=yt
+	# binary install on macOS or Windows:
+	  	pip install -pre yt
 	
 
 d3js
