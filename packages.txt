@@ -98,13 +98,15 @@ gsl
 	In Ubuntu linux:
             sudo apt install libgsl-dev
 
-yt
+yt      (ZuHone)
 	Versatile visualization environment in python. Probably easiest to install within
 	your python environment via the commands
 		conda install yt
         or 
 		pip install yt
 	depending which type of python environment you have.
+
+	Lecture notes are here:  http://yt-project.org/pitp2016_demo/yt_tutorial.slides.html
 
 	The new yt 3.3-dev (development) series can be installed as follows:  
 
@@ -118,13 +120,13 @@ yt
 	  	pip install -pre yt
 	
 
-d3js
+d3js    (Ericson)
 	This is a JavaScript based visualization toolkit. Great to present your research online
 	for outreach, collaborators etc.
 	See https://d3js.org/
 
 
-athena (Stone)
+athena  (Stone)
         http://www.astro.princeton.edu/~jstone/downloads/papers/stone_hw.pdf 
 	Use athena4.2.tar.gz
 
