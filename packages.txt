@@ -4,9 +4,11 @@ The following packages we are likely to need at PITP 2016. Each UNIX
 distro (linux and mac alike) have different ways how to install
 them. Some example are given here how to do them.
 
-You can find copied of codes on either our published URL's , or
+You can find copies of codes on either our published URL's , or
 within the directory /data/pitp on the IAS cluster where all participants
-have an account.
+have an account. Look in /data/pitp/software.
+If you want to work on one of the cluster nodes, be sure to create your
+own directory within /data/pitp/ and work within that.
 
 
 #--------------------------------------------------------------------------------
@@ -122,15 +124,19 @@ d3js
 	See https://d3js.org/
 
 
-athena
-	(Stone) more instructions will follow
+athena (Stone)
+        http://www.astro.princeton.edu/~jstone/downloads/papers/stone_hw.pdf 
 	Use athena4.2.tar.gz
 
-harm
+harmpi  (Tchekhovskoy)
+	GitHub repo: https://github.com/atchekho/harmpi.git
+	Tutorial: https://github.com/atchekho/harmpi/blob/master/tutorial.md
+	Homework: https://github.com/atchekho/harmpi/blob/master/exercises.md
+
+	The code is 3D and is parallelized using MPI, results can be obtained rather quickly.
+
+iharm2d_v3 (Gammie)
 	more instructions will follow
 
-iharm2d_v3
-	(Gammie) more instructions will follow
-
-tristan
-	(Spitovsky) more instructions will follow
+tristan (Spitovsky) 
+	more instructions will follow
