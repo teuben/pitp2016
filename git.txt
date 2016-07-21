@@ -1,0 +1,98 @@
+<<this document isn't finished yet>>
+
+simple local git example
+------------------------
+
+If you like git, and you have multiple machines where you develop,
+rsync would be a pain. git could be the solution, as long as you have
+ssh access to your machines. You fully control ownership.  Sharing is
+not easily done this way, you will need to set up a special git
+account with a noshell access for example.
+
+But here is the simple example for the case "one user, many machines":
+
+# on machine 'a', e.g. in the home directory
+a% mkdir project1.git
+a% cd project1.git
+a% git init --bare
+
+# on machine 'b',   anywhere you can do
+b% git clone $USER@a:project1.git
+b% cd project1
+b% vi readme
+b% git add readme
+b% git commit readme
+b% git push
+
+
+In practice you may want to put your different git projects into a
+git directory right off your home directory.
+
+
+Getting a git repo for just reading
+-----------------------------------
+
+If you just want to get a local copy (e.g. pitp2016) get it and
+read it:
+
+     git clone https://github.com/teuben/pitp2016
+     cd pitp2016
+     more packages.txt
+
+but.... lets say you worked on the notebooks
+
+     cd notebooks
+     jupyter notebook
+
+most likely some of those ipynb files will have been changed
+by the auto-save, and now the command
+
+     git pull
+
+will refuse to merge them (as it should!).   What to do?
+Only solution is to remove the offending file and pull again
+
+     rm python-basic.ipynb
+     git pull
+
+
+collaborate on a git project
+----------------------------
+
+1) go on github, click on https://github.com/teuben/pitp2016
+   and click on "fork" (somewhere top right) so you get your
+   copy in your github account
+
+2a) go to your own clone in the browser, edit/add files what
+    you want to change/add and create a pull request from this.
+
+2b) go to your unix terminal and look at the following session
+    to do all this work in a terminal
+    
+    #  1) grab "yourname" clone
+    git clone https://github.com/yourname/pitp2016
+    cd pitp2016
+
+    #  2) tell it we were not the real master, so you can sync back later when needed
+    #  THIS STEP IS OPTIONAL
+    git remote add upstream https://github.com/teuben/pitp2016
+
+    #  3) first update our master from the upstream/master, and put it back to my github
+    #  THIS STEP IS OPTIONAL
+    git fetch upstream
+    git merge upstream/master
+    git push
+
+    #  4) do your work on a branch (thus not polluting the original)
+    git checkout -b test1
+    git push --set-upstream origin test1
+
+    #  5) now do your work, test that everything works etc.
+
+
+Questions:
+
+    Q1) what if you started to editing lots of files, and you didn't do that on a branch, as
+       step 4) suggested?
+
+
