@@ -1,0 +1,69 @@
+Here is the list of routines in the code
+and compilation instructions.
+
+This code integrates the scalar field equation on 
+a fixed BH background in spherical symmetry. It employs
+ingoing Eddington Finkelstein coordinates and excises the black hole.
+
+Makefile.  script to compile the code, simply
+type "make" and the code should compile itself.
+
+main.f90 -- this is the main driver of the code.
+it defines the needed variables (actully allocates even more
+than needed!). it sets u(1) = phi; u(2) = phi,r ; u(3) = pi
+
+params.f90 -- define vars for the parameters and 
+	      the routine to read them from pars.in
+
+initial.f90 -- defines the initial data. Called by main.f90
+
+evol.f90 -- performs a single step evolution with Runge-Kutta
+	    3rd order. Called by main.f90
+	    it needs to call derivs (to compute first order spatial derivatives)
+	    dissipation (to compute the dissipation operator)
+	    rhs (to evaluate the rhs of each eqn)
+	    boundary (to impose boundary conditions)
+
+derivs.f90 -- defines routines to calculate derivatives and
+	      has a dissipation operator
+
+boundary.f90 -- defines the boundary condition at the right hand
+		side level. 3 options are specified, as a model
+
+rhs.f90 -- rhs, this code integrates the scalar field eqn on a fixed BH background
+
+
+THe code will produce output to be viewed with xvs.
+creates *.sdf files which are then supposed to be sent
+to xvs with the command "sdftoxvs file.sdf"
+having opened xvs first
+comment out the gft_write ... calls in main.f90 and replace
+with your own if you do not have that software. (ie...Mac's largely out!)
+
+************************* HOMEWORK **********************************
+
+This code integrates the scalar wave equation on a black hole bacground
+given by Schwarzschild in ingoing Eddington-Finkelstein coordinates.
+
+1- Derive the equations . Using Pi = phi,t and g = phi,r as variables
+for reducing the 2nd order equation to first order form.
+1a) in deriving the equations, assume the metric can be written as:
+ds^2 = (-alpha^2 + g_rr betar^2) dt^2 + grr dr^2 + gomega (dtheta^2 + sin(theta)^2 dphi^2)
+
+and then evaluating alpha, betar, grr and gomega from the known expression, check the
+equations implemented.
+
+2.- Play around with it, in particular check different boundary conditions implementations
+and, see if you can obtain the quasi-normal ringing down behavior expected.
+
+3a.- Change equations to incorporate a perfect fluid (in spherical symmmetry) for a simple
+equation of state (even ultra relativistic EoS \nabla_a T^{ab} = 0 with
+T_{ab} = (rho + p) g_{ab} + u_a u_b  and p = rho/3
+
+3b.- Follow the description in http://arxiv.org/pdf/gr-qc/0111003.pdf and move to a
+self-gravitating/backreacting case. You'd be studying a dynamical spacetime (though without
+radiation) wih a black hole accreting scalar field energy (or matter if you did 3a).
+Having done (1) in terms of alpha, betar, grr, and gomega, you just need to update
+what those values should be in time. This is an explicit way of seeing how matter/energy
+can metric can be treated separatedly and connected only as/where needed.
+
