@@ -1,0 +1,15 @@
+This codes implements Maxwell's equations in 3+1 with damping.
+ie. 8 fields are integrated.
+
+-- Check the value of damping wrt to the divB constraint behavior. Output file fort.101
+gives the behavior of (the norm of) the constraint vs time. Run with k_r = 0 (no damping)
+and k_r = 1 (damping scale of 1) and compare the obtained behavior. What happens?
+
+-- Implement the force-free equations and see how the solution differs wrt to the
+vacuum case.
+
+-- If adventurous, change the current to incorporate anisotropy, and incorporate
+a suitable IMEX scheme.
+
+
+
