@@ -1,13 +1,13 @@
-<<this document isn't finished yet>>
 
-simple local git example
-------------------------
 
-If you like git, and you have multiple machines where you develop,
-rsync would be a pain. git could be the solution, as long as you have
-ssh access to your machines. You fully control ownership.  Sharing is
-not easily done this way, you will need to set up a special git
-account with a noshell access for example.
+A: simple local git example
+---------------------------
+
+If you think you like git, and you have multiple machines where you
+develop, rsync would be a pain. git could be the solution, as long as
+you have ssh access to your machines. You fully control ownership.
+Sharing is not easily done this way, you will need to set up a special
+git account with a noshell access for example.
 
 But here is the simple example for the case "one user, many machines":
 
@@ -29,8 +29,8 @@ In practice you may want to put your different git projects into a
 git directory right off your home directory.
 
 
-Getting a git repo for just reading
------------------------------------
+B: Getting a git repo for just reading
+--------------------------------------
 
 If you just want to get a local copy (e.g. pitp2016) get it and
 read it, and keep updating it
@@ -57,8 +57,8 @@ Only solution is to remove the offending file and pull again
      git pull
 
 
-collaborate on a git project
-----------------------------
+C: collaborate on a git project
+-------------------------------
 
 1) go on github, click on https://github.com/teuben/pitp2016
    and click on "fork" (somewhere top right) so you get your
@@ -70,15 +70,16 @@ collaborate on a git project
 2b) go to your unix terminal and look at the following session
     to do all this work in a terminal
     
-    #  1) grab "yourname" clone
+    #  1) grab "yourname" clone from your collaborator
     git clone https://github.com/yourname/pitp2016
     cd pitp2016
 
     #  2) tell it we were not the real master, so you can sync back later when needed
     #  THIS STEP IS OPTIONAL
     git remote add upstream https://github.com/teuben/pitp2016
+    git remote -v
 
-    #  3) first update our master from the upstream/master, and put it back to my github
+    #  3) first update our master from the upstream/master, and push it back to my github
     #  THIS STEP IS OPTIONAL
     git fetch upstream
     git merge upstream/master
@@ -91,16 +92,25 @@ collaborate on a git project
     #  5) now do your work, test that everything works etc.
     vi contributors
     git commit contributors
+    
     mkdir MyCode
     git add MyCode
     echo "my new PIC code"  > MyCode/README
     git add MyCode/README
     git commit MyCode/README
 
-    git status
-
+    # now send those two files back to your origin/master
     git push
-    
+
+    #  Now you can go to github and switch to this branch and signal the upstream master that you
+    #  have a pull request from this branch
+
+    #  6) remove your branch locally and on your remove once it has been merged into the upstream master
+    #  THIS STEP IS OPTIONAL
+    git checkout master
+    git branch -D test1
+    git push origin --delete test1
+
 
 
 Questions:
