@@ -91,6 +91,8 @@ C: collaborate on a git project
 
     #  5) now do your work, test that everything works etc.
     vi contributors
+    git diff contributors
+    tkdiff contributors            # example program that knows about 'git'
     git commit contributors
     
     mkdir MyCode
@@ -110,6 +112,33 @@ C: collaborate on a git project
     git checkout master
     git branch -D test1
     git push origin --delete test1
+
+
+Finally:
+    Put some useful things in your ~/.gitconfig file, e.g. via
+    	     git config --global user.name "Peter Teuben"
+    	     git config --global user.email  teuben@gmail.com
+    etc. etc.
+    
+
+[user]
+	email = teuben@gmail.com
+	name = Peter Teuben
+[credential]
+	helper = cache --timeout 10000
+[core]
+	editor = mem
+[merge]
+	tool = meld
+[push]
+	default = simple
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[alias]
+	ci = commit
+	co = checkout
 
 
 
