@@ -1,0 +1,36 @@
+Here is the list of things of the code.
+
+Makefile.  script to compile the code, simply
+type "make" and the code should compile itself.
+
+params.f90 -- define vars for the parameters and 
+	      the routine to read them from pars.in
+
+initial.f90 -- defines the initial data. Called by main.f90
+
+evol.f90 -- performs a single step evolution with Runge-Kutta
+	    3rd order. Called by main.f90
+
+derivs.f90 -- defines routines to calculate derivatives and
+	      has a dissipation operator
+
+boundary.f90 -- defines the boundary condition at the right hand
+		 side level.
+
+
+THe code will produce output to be viewed with xvs.
+creates *.sdf files which are then supposed to be sent
+to xvs with the command "sdftoxvs file.sdf"
+having opened xvs first
+
+
+
+**************************************
+
+Take a look at the code, it is just the wave equation with initial
+data with a pure left-moving wave.
+Examine the boundary conditions (boundary.f90) and what each is doing. 
+
+Write you own output for the norm of the fields. Confirm stability,
+choose cfl in the par file to say =4. Check it is unstable.
+
