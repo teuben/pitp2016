@@ -1,0 +1,17 @@
+&pars_input
+dim = 2
+Nx = 2001
+nt = 200000
+freq = 200 
+cfl = 0.2
+disip = 0.04
+cond = 100000000.0
+c = 0.5
+m = 0.0
+q = 0.0
+Rout = 1.
+bc = -2 
+tau = 1 
+derorder = 1
+/
+

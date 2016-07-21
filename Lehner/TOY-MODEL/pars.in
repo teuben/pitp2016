@@ -1,0 +1,18 @@
+&pars_input
+dim = 2
+runge_kutta = 1
+Nx = 1001
+nt = 194000
+freq = 1000
+cfl = 0.25
+disip = 0.005
+cond = 10.0
+c = .5
+m = 0.0
+q = 0.0
+Rout = 1.
+bc = -2 
+tau = 1 
+derorder = 2
+/
+

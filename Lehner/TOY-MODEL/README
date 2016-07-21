@@ -1,0 +1,14 @@
+This codes implements a few particular IMEX schemes for the system
+(code implemented by Carlos Palenzuela)
+
+
+V,t = W,x - con*(V - c W)
+W,t = V,x
+
+to check that even with arbitrarily large values of con,
+the solution is stable.
+
+
+HOMEWORK:
+-- Check the code, the structure of evolve.f90 and add to
+it another IMEX method, e.g.  arXiv:0810.1838. SSP2(3,3,2)
