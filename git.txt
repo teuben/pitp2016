@@ -33,13 +33,14 @@ Getting a git repo for just reading
 -----------------------------------
 
 If you just want to get a local copy (e.g. pitp2016) get it and
-read it:
+read it, and keep updating it
 
      git clone https://github.com/teuben/pitp2016
      cd pitp2016
      more packages.txt
+     git pull
 
-but.... lets say you worked on the notebooks
+but.... lets say you just worked with the notebooks
 
      cd notebooks
      jupyter notebook
@@ -88,6 +89,18 @@ collaborate on a git project
     git push --set-upstream origin test1
 
     #  5) now do your work, test that everything works etc.
+    vi contributors
+    git commit contributors
+    mkdir MyCode
+    git add MyCode
+    echo "my new PIC code"  > MyCode/README
+    git add README
+    git commit README
+
+    git status
+
+    # now two files should be visible as
+    
 
 
 Questions:
