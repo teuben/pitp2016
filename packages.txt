@@ -117,8 +117,12 @@ yt      (ZuHone)
 	# build from source on macOS or Linux:
 	  	pip install hg+https://bitbucket.org/yt_analysis/yt#egg=yt
 	# binary install on macOS or Windows:
-	  	pip install -pre yt
-	
+	  	pip install --pre yt
+
+	wget -r --no-parent http://yt-project.org/pitp2016_demo/data/WindTunnel
+	wget -r --no-parent http://yt-project.org/pitp2016_demo/data/DD0046
+	wget -r --no-parent http://yt-project.org/pitp2016_demo/examples
+
 
 d3js    (Ericson)
 	This is a JavaScript based visualization toolkit. Great to present your research online
@@ -132,8 +136,8 @@ athena  (Stone)
 
 harmpi  (Tchekhovskoy)
 	GitHub repo: https://github.com/atchekho/harmpi.git
-	Tutorial: https://github.com/atchekho/harmpi/blob/master/tutorial.md
-	Homework: https://github.com/atchekho/harmpi/blob/master/exercises.md
+	Tutorial:    https://github.com/atchekho/harmpi/blob/master/tutorial.md
+	Homework:    https://github.com/atchekho/harmpi/blob/master/exercises.md
 
 	The code is 3D and is parallelized using MPI, results can be obtained rather quickly.
 
@@ -141,4 +145,16 @@ iharm2d_v3 (Gammie)
 	more instructions will follow
 
 tristan (Spitovsky) 
-	more instructions will follow
+        Homework at:   http://www.astro.princeton.edu/~anatoly/PICHW2016.html
+	Code at:       https://github.com/ntoles/tristan-mp-pitp
+	Vis at:        https://github.com/pcrumley/Iseult
+
+	
+	<edit> Makefile
+	make
+	mpirun -n 1 ./tristan-mp2d
+	Iseult/iseult.py
+
+	Here it is important to have an MPI enabled compiler !!!  See the "openmpi" comments
+	earlier in this document.
+
