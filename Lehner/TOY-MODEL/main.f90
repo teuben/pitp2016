@@ -42,9 +42,9 @@
 	time = 0.0
 	call initial(uold,x,Nx)
         print*, time, maxval(abs(uold(1,:))),maxval(abs(uold(2,:)))
-        ret = gft_out_full('conduc',time, nx-1, 'x', 1, x,conduc(1:nx-1))
-        ret = gft_out_full('V',time, nx-1, 'x', 1, x,uold(1,1:nx-1)) 
-        ret = gft_out_full('W',time, nx-1, 'x', 1, x,uold(2,1:nx-1)) 
+!        ret = gft_out_full('conduc',time, nx-1, 'x', 1, x,conduc(1:nx-1))
+!        ret = gft_out_full('V',time, nx-1, 'x', 1, x,uold(1,1:nx-1)) 
+!        ret = gft_out_full('W',time, nx-1, 'x', 1, x,uold(2,1:nx-1)) 
 
 !save for analysis
         open(unit = 100, file="Us.dat")
@@ -70,8 +70,8 @@
 	    !will call here for output
 	    print*, time, maxval(abs(uold(1,:))),maxval(abs(uold(2,:)))
  !           ret = gft_out_full('conduc',time, nx-1, 'x', 1, x,conduc(1:nx-1))
-            ret = gft_out_full('V',time, nx-1, 'x', 1, x,uold(1,1:nx-1))
-            ret = gft_out_full('W',time, nx-1, 'x', 1, x,uold(2,1:nx-1))
+!            ret = gft_out_full('V',time, nx-1, 'x', 1, x,uold(1,1:nx-1))
+!            ret = gft_out_full('W',time, nx-1, 'x', 1, x,uold(2,1:nx-1))
 
 !            write(100,*) 
 !            write(100,*) "#time=",time
