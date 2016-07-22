@@ -35,3 +35,7 @@ script would be submitted via:
 cd /home/pitp0XX/Gadget-2.0.4/Gadget2
 mpirun ./Gadget2 input.param
 
+
+
+See also:
+   http://mpitutorial.com/tutorials/mpi-hello-world/
