@@ -11,3 +11,11 @@ instead of just
 
 to compiler your codes.
 
+
+
+As a benchmark, the default options in EM result in:
+
+gnu    79.140u 8.840s 1:28.00 99.9%	0+0k 136+16io 2pf+0w
+       76.332u 8.272s 1:24.65 99.9%	0+0k 0+16io 0pf+0w     (-march=native)
+intel  65.780u 15.600s 1:21.42 99.9%	0+0k 0+32io 0pf+0w
+       64.664u 7.352s 1:12.02 99.9%	0+0k 0+32io 0pf+0w     (-march=native)
