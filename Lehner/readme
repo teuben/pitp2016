@@ -1,0 +1,13 @@
+Each directory contains a Makefile, which should work for the intel
+compiler if you have that. This is how it was tested.
+
+If you only have gfortran, use the Makefile.gnu, e.g.
+
+	make -f Makefile.gnu
+
+instead of just
+
+	make
+
+to compiler your codes.
+
