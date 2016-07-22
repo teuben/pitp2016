@@ -27,7 +27,7 @@ program landau_damping
 
   ! k-space parameters
   ! k = 2*pi*kint
-  integer :: kint = 1
+!  integer :: kint = 1
   
   !------------------------------------------------------!
   
@@ -53,13 +53,13 @@ program landau_damping
   real, dimension (:), allocatable :: vgrid
 
   ! gk(m)
-  complex, dimension (:), allocatable :: gkm
+!  complex, dimension (:), allocatable :: gkm
   
   integer :: phi_unit = 101, gxv_unit = 102, phi2_unit = 103
   
   ! define pi for later use
   pi = 2.*acos(0.)
-  k = 2.*pi*kint
+!  k = 2.*pi*kint
   
   call init_io
   
@@ -76,9 +76,9 @@ program landau_damping
   call simple_solve
 
   ! allocates and initializes g(k,m)
-  call init_gkm
+!  call init_gkm
   ! implicit in time, spectral in x and v solver
-  call advanced_solve
+!  call advanced_solve
   
   call finish_io
 
@@ -149,16 +149,16 @@ contains
     
   end subroutine init_gxv
 
-  subroutine init_gkm
+  ! subroutine init_gkm
 
-    implicit none
+  !   implicit none
 
-    if (.not.allocated(gkm)) allocate (gkm(0:nm-1))
+  !   if (.not.allocated(gkm)) allocate (gkm(0:nm-1))
 
-    gkm(0) = 0.5
-    gkm(1:) = 0.0
+  !   gkm(0) = 0.5
+  !   gkm(1:) = 0.0
     
-  end subroutine init_gkm
+  ! end subroutine init_gkm
   
   subroutine init_phi
 
@@ -282,22 +282,22 @@ contains
     
   end subroutine write_simple
 
-  subroutine advanced_solve
+!  subroutine advanced_solve
 
-    implicit none
+!    implicit none
 
-    integer :: istep
+!    integer :: istep
 
-    time = 0.0
-    call write_advanced(0)
+!    time = 0.0
+!    call write_advanced(0)
     
-    do istep = 1, nstep
-       call update_gkm
-       time = time + dt
-       call write_advanced (istep)
-    end do
+!    do istep = 1, nstep
+!       call update_gkm
+!       time = time + dt
+!       call write_advanced (istep)
+!    end do
     
-  end subroutine advanced_solve
+!  end subroutine advanced_solve
 
   subroutine update_gkm
 
