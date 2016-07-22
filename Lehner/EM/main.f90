@@ -82,10 +82,10 @@
 	  call derivs(uold(iBy,:,:,:),dyBy,dx,N,2)
 	  call derivs(uold(iBz,:,:,:),dzBz,dx,N,3)
 
-          ret = gft_out_brief('constraint',time, (/n,n,n/), 3, dxBx+dyBy+dzBz)  
-          ret = gft_out_brief('Bx',time, (/n,n,n/), 3, uold(iBx,:,:,:))
-          ret = gft_out_brief('By',time, (/n,n,n/), 3, uold(iBy,:,:,:))
-          ret = gft_out_brief('Bz',time, (/n,n,n/), 3, uold(iBz,:,:,:))
+!          ret = gft_out_brief('constraint',time, (/n,n,n/), 3, dxBx+dyBy+dzBz)  
+!          ret = gft_out_brief('Bx',time, (/n,n,n/), 3, uold(iBx,:,:,:))
+!          ret = gft_out_brief('By',time, (/n,n,n/), 3, uold(iBy,:,:,:))
+!          ret = gft_out_brief('Bz',time, (/n,n,n/), 3, uold(iBz,:,:,:))
 
 	  call norm3d(divBnorm,dxBx+dyBy+dzBz,N)
 
