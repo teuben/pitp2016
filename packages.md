@@ -90,6 +90,10 @@ UNIX LIBRARIES:
     brew install openmpi --enable-mpi-thread-multiple
     brew install hdf5 --with-fortran --with-mpi
 
+  but I've also seen this reported to work:
+
+    brew install homebrew/science/hdf5 --with-fortran --with-mpi
+
 ## mpich
 
   This is another MPI library:  
