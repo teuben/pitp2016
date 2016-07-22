@@ -58,14 +58,14 @@
 	  if(mod(i,freq).eq.0) then
 	  !will call here for output
 	  print*,'out', time,maxval(abs(uold(1,:)))
-	  ret = gft_out_full('phi',time, nx, 'x', 1, x, uold(1,:))
-          ret = gft_out_full('g',time, nx, 'x', 1, x, uold(2,:))
-          ret = gft_out_full('pi',time, nx, 'x', 1, x, uold(3,:))
+! 	  ret = gft_out_full('phi',time, nx, 'x', 1, x, uold(1,:))
+!         ret = gft_out_full('g',time, nx, 'x', 1, x, uold(2,:))
+!         ret = gft_out_full('pi',time, nx, 'x', 1, x, uold(3,:))
 	  end if
 	  if(mod(i,10).eq.0) then
-	  ret =  gft_out_full('pir40',time, 1, 'x', 1, x(m1), uold(3,m1))
-          ret =  gft_out_full('pir70',time, 1, 'x', 1, x(m2), uold(3,m2))
-          ret =  gft_out_full('pir100',time, 1, 'x', 1, x(m3), uold(3,m3))
+!	  ret =  gft_out_full('pir40',time, 1, 'x', 1, x(m1), uold(3,m1))
+!         ret =  gft_out_full('pir70',time, 1, 'x', 1, x(m2), uold(3,m2))
+!         ret =  gft_out_full('pir100',time, 1, 'x', 1, x(m3), uold(3,m3))
 
 	  end if	
 	

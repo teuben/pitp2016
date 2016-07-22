@@ -4,7 +4,7 @@ OBJS =	boundary.o derivs.o evolve.o initial.o main.o params.o rhs.o
 
 MAKEFLAGS = -r
 
-LIBS = -L/usr/local/lib/ -lbbhutil -lrnpl -lutilio -lvutil -lxvs 
+LIBS = # -L/usr/local/lib/ -lbbhutil -lrnpl -lutilio -lvutil -lxvs 
 
 F90 = ifort 
 F77 = ifort 
