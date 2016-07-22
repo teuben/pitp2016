@@ -168,7 +168,7 @@ UNIX LIBRARIES:
 
     <edit> Makefile
     make
-    mpirun -n 1 ./tristan-mp2d
+    mpirun -n 1 ./tristan-mp2d -i input.weibel
     Iseult/iseult.py
 
   Here it is important to have an MPI enabled compiler !!! See the "openmpi"
