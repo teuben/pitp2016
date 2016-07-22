@@ -15,7 +15,7 @@ UNIX COMMANDS:
 
 ## git
 
-  we also use this to distribute notes, scripts, software for PITP 2016.
+  we also use this to distribute notes, scripts, software for PITP 2016.  
   To get a copy of the PITP notes:
 
     git clone http://github.com/teuben/pitp2016
@@ -30,14 +30,14 @@ UNIX COMMANDS:
 ## gcc/g++/gfortran
 
   The C/C++/Fortran(90) compiler suite.  Others may be available as well that work
-  also, e.g. "clang", the Intel compiler and the PGI compiler.
+  also, e.g. "clang", the Intel compiler and the PGI compiler.  
   The C compiler needs to suport OpenMP (which gcc does)
 
 
 ## python/ipython
 
   Although the python command may be present for you, what we really want here is
-  an integrated scientific python environment, e.g. via anaconda.
+  an integrated scientific python environment, e.g. via anaconda.  
   Within python, the following modules are recommended:
 
 	numpy
@@ -52,7 +52,7 @@ UNIX COMMANDS:
 
 ## ffmpeg
 
-  This tool creates movies from still images that simulations often create on the fly.
+  This tool creates movies from still images that simulations often create on the fly.  
   Great for presentations. We will use this for a few of the homeworks.
 
   In ubuntu linux:
@@ -65,12 +65,12 @@ UNIX COMMANDS:
 
 ## ygraph
 
-  Another simple and basic graph plotter. 
+  Another simple and basic graph plotter.   
   See for example http://cactuscode.org/documentation/visualization/yGraph/
 
 ## visit
 
-  A more graphical based visualization environment
+  A more graphical based visualization environment  
   See https://wci.llnl.gov/simulation/computer-codes/visit/
 
 
@@ -79,7 +79,7 @@ UNIX LIBRARIES:
 
 ## openmpi 
 
-  This is one of the ways to implement MPI, and probably our preferred way.
+  This is one of the ways to implement MPI, and probably our preferred way.  
   On Ubuntu/Linux:
   
     apt install openmpi-bin libopenmpi-dev libhdf5-openmpi-dev
@@ -92,7 +92,7 @@ UNIX LIBRARIES:
 
 ## mpich
 
-  This is another MPI library:
+  This is another MPI library:  
   On Ubuntu/Linux:
   
     apt install mpich
@@ -101,21 +101,22 @@ UNIX LIBRARIES:
 
 ## gsl
 
-  This is the Gnu Scientific Library. Use your package manager to install it, e.g.
+  This is the Gnu Scientific Library. Use your package manager to install it, e.g.  
   In Ubuntu linux:
             
     sudo apt install libgsl-dev
 
 ## yt  (ZuHone)
 	
-  Versatile visualization environment in python. Probably easiest to install within
-  your python environment via the commands
+  Versatile visualization environment in python. Probably easiest to install
+  within your python environment via the commands
   
     conda install yt
     or 
     pip install yt
 	
   depending which type of python environment you have.
+  
   Lecture notes are here:  http://yt-project.org/pitp2016_demo/yt_tutorial.slides.html
 
   The new yt 3.3-dev (development) series can be installed as follows:  
@@ -138,20 +139,20 @@ UNIX LIBRARIES:
 ## d3js  (Ericson)
 
   This is a JavaScript based visualization toolkit. Great to present your research online
-  for outreach, collaborators etc.
+  for outreach, collaborators etc.  
   See https://d3js.org/
 
 
 ## athena  (Stone)
 
-  http://www.astro.princeton.edu/~jstone/downloads/papers/stone_hw.pdf 
+  http://www.astro.princeton.edu/~jstone/downloads/papers/stone_hw.pdf  
   Use athena4.2.tar.gz
 
 ## harmpi  (Tchekhovskoy)
 
-  GitHub repo: https://github.com/atchekho/harmpi.git
-  Tutorial:    https://github.com/atchekho/harmpi/blob/master/tutorial.md
-  Homework:    https://github.com/atchekho/harmpi/blob/master/exercises.md
+  GitHub repo: https://github.com/atchekho/harmpi.git  
+  Tutorial:    https://github.com/atchekho/harmpi/blob/master/tutorial.md  
+  Homework:    https://github.com/atchekho/harmpi/blob/master/exercises.md  
 
   The code is 3D and is parallelized using MPI, results can be obtained rather quickly.
 
@@ -161,16 +162,15 @@ UNIX LIBRARIES:
 
 ## tristan (Spitovsky) 
 
-  Homework at:   http://www.astro.princeton.edu/~anatoly/PICHW2016.html
-  Code at:       https://github.com/ntoles/tristan-mp-pitp
+  Homework at:   http://www.astro.princeton.edu/~anatoly/PICHW2016.html  
+  Code at:       https://github.com/ntoles/tristan-mp-pitp  
   Vis at:        https://github.com/pcrumley/Iseult
-
 
     <edit> Makefile
     make
     mpirun -n 1 ./tristan-mp2d
     Iseult/iseult.py
 
-  Here it is important to have an MPI enabled compiler !!!  See the "openmpi" comments
-  earlier in this document.
+  Here it is important to have an MPI enabled compiler !!! See the "openmpi"
+  comments earlier in this document.
 
