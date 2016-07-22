@@ -13,7 +13,7 @@ own directory within /data/pitp/ and work within that.
 UNIX COMMANDS:
 
 
-git
+## git
 
   we also use this to distribute notes, scripts, software for PITP 2016.
   To get a copy of the PITP notes:
@@ -27,17 +27,14 @@ git
     git pull
 
 
-gcc
-g++
-gfortran
+## gcc/g++/gfortran
 
   The C/C++/Fortran(90) compiler suite.  Others may be available as well that work
   also, e.g. "clang", the Intel compiler and the PGI compiler.
   The C compiler needs to suport OpenMP (which gcc does)
 
 
-python
-ipython
+## python/ipython
 
   Although the python command may be present for you, what we really want here is
   an integrated scientific python environment, e.g. via anaconda.
@@ -53,7 +50,7 @@ ipython
 	glueviz
 
 
-ffmpeg
+## ffmpeg
 
   This tool creates movies from still images that simulations often create on the fly.
   Great for presentations. We will use this for a few of the homeworks.
@@ -62,16 +59,16 @@ ffmpeg
     
     sudo apt install ffmpeg imagemagick vlc
 
-gnuplot
+## gnuplot
 
   A simple, basic but effective way to plot data.
 
-ygraph
+## ygraph
 
   Another simple and basic graph plotter. 
   See for example http://cactuscode.org/documentation/visualization/yGraph/
 
-visit
+## visit
 
   A more graphical based visualization environment
   See https://wci.llnl.gov/simulation/computer-codes/visit/
@@ -80,7 +77,7 @@ visit
 --------------------------------------------------------------------------------
 UNIX LIBRARIES:
 
-openmpi 
+## openmpi 
 
   This is one of the ways to implement MPI, and probably our preferred way.
   On Ubuntu/Linux:
@@ -93,7 +90,7 @@ openmpi
     brew install openmpi --enable-mpi-thread-multiple
     brew install hdf5 --with-fortran --with-mpi
 
-mpich
+## mpich
 
   This is another MPI library:
   On Ubuntu/Linux:
@@ -102,14 +99,14 @@ mpich
   
   but not experimented with this yet, as openmpi seems to work.
 
-gsl
+## gsl
 
   This is the Gnu Scientific Library. Use your package manager to install it, e.g.
   In Ubuntu linux:
             
     sudo apt install libgsl-dev
 
-yt  (ZuHone)
+## yt  (ZuHone)
 	
   Versatile visualization environment in python. Probably easiest to install within
   your python environment via the commands
@@ -138,19 +135,19 @@ yt  (ZuHone)
 	wget -r --no-parent http://yt-project.org/pitp2016_demo/examples
 
 
-d3js  (Ericson)
+## d3js  (Ericson)
 
   This is a JavaScript based visualization toolkit. Great to present your research online
   for outreach, collaborators etc.
   See https://d3js.org/
 
 
-athena  (Stone)
+## athena  (Stone)
 
   http://www.astro.princeton.edu/~jstone/downloads/papers/stone_hw.pdf 
   Use athena4.2.tar.gz
 
-harmpi  (Tchekhovskoy)
+## harmpi  (Tchekhovskoy)
 
   GitHub repo: https://github.com/atchekho/harmpi.git
   Tutorial:    https://github.com/atchekho/harmpi/blob/master/tutorial.md
@@ -158,11 +155,11 @@ harmpi  (Tchekhovskoy)
 
   The code is 3D and is parallelized using MPI, results can be obtained rather quickly.
 
-iharm2d_v3 (Gammie)
+## iharm2d_v3 (Gammie)
 
   more instructions will follow
 
-tristan (Spitovsky) 
+## tristan (Spitovsky) 
 
   Homework at:   http://www.astro.princeton.edu/~anatoly/PICHW2016.html
   Code at:       https://github.com/ntoles/tristan-mp-pitp
