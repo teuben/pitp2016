@@ -1,0 +1,23 @@
+#! /bin/csh -f
+#
+#   paste a series of pdf files into a single PDF, but
+#   add a title (filename) before each PDF.
+#   
+
+
+set out=AAA_Final.pdf
+
+# accumulate titles and actual pdfs
+set pdf=()
+
+foreach file ($*)
+   set name = $file:r
+   echo $name > .$name.title
+   enscript -r -B -fCourier60 .$name.title -o .$name.title.ps
+   ps2pdf .$name.title.ps .$name.title.pdf
+   set pdf=($pdf .$name.title.pdf $file)
+end
+
+echo $pdf
+
+pdfjoin $pdf -o final.pdf
