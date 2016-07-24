@@ -162,7 +162,7 @@ UNIX LIBRARIES:
 
 ## iharm2d_v3 (Gammie)
 
-  more instructions will follow
+  GitHub repo: https://github.com/AFD-Illinois/iharm2d_v3
 
 ## tristan (Spitovsky) 
 
