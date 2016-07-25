@@ -7,6 +7,9 @@ within the directory /data/pitp on the IAS cluster where all participants
 have an account. Look in /data/pitp/software.
 If you want to work on one of the cluster nodes, be sure to create your
 own directory within /data/pitp/ and work within that.
+Please read http://www.sns.ias.edu/computing/servers carefully where you
+should and should not compute.
+
 
 
 --------------------------------------------------------------------------------
