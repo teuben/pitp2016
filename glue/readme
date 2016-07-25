@@ -1,0 +1,9 @@
+
+init_nemo.csh  - creates a few "model" files in case you want to create newer ones
+	         (obviously you would need to install NEMO for this)
+
+
+model1         - rotating disk with a surprise twist
+
+model2         - spiral in a disk
+model3         - fits datacube from model2
