@@ -10,7 +10,8 @@
 EXE  = ADERDG  
 # *********************************************************************
 
-F90 = /opt/intel/bin/ifort 
+#F90 = /opt/intel/bin/ifort 
+F90 = gfortran
 
 #------------------------------------------------------------------------------
 # LIBRARIES
@@ -19,12 +20,15 @@ F90 = /opt/intel/bin/ifort
 LIBDIR      = ./lib
 LTEC   = 
 
+# intel compiler
 LFLAGS = $(LTEC) -cxxlib
+# gnu compiler
+LFLAGS = $(LTEC)
 
 # COMPILATION OPTIMIZATION FLAGS for ifort
-F90FLAGS = -c -O2 -r8 -align -fpp  
+# F90FLAGS = -c -O2 -r8 -align -fpp  
 # COMPILATION OPTIMIZATION FLAGS for gcc
-#F90FLAGS = -c -O2 -fdefault-real-8 -fcray-pointer -ffree-line-length-none
+F90FLAGS = -c -O2 -fdefault-real-8 -fcray-pointer -ffree-line-length-none
 
 # PREPROCESSOR DEFINITIONS 
 FCFLAGS =           
