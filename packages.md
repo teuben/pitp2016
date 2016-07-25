@@ -164,7 +164,7 @@ UNIX LIBRARIES:
 
   GitHub repo 1: https://github.com/AFD-Illinois/iharm2d_v3
 
-  GitHub repo 2: https://github.com/AFD-Illinois/ibothros3d
+  GitHub repo 2: https://github.com/AFD-Illinois/ibothros2d
 
   see also additional files in pitp2016/Gammie
 
