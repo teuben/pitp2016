@@ -163,6 +163,7 @@ UNIX LIBRARIES:
 ## iharm2d_v3 (Gammie)
 
   GitHub repo: https://github.com/AFD-Illinois/iharm2d_v3
+  see also additional files in pitp2016/Gammie
 
 ## tristan (Spitovsky) 
 
@@ -178,3 +179,6 @@ UNIX LIBRARIES:
   Here it is important to have an MPI enabled compiler !!! See the "openmpi"
   comments earlier in this document.
 
+## ADERG (Zanotti)
+
+   See code in pitp2016/Zanotti
