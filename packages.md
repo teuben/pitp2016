@@ -112,7 +112,7 @@ UNIX LIBRARIES:
   This is the Gnu Scientific Library. Use your package manager to install it, e.g.  
   In Ubuntu linux:
             
-    sudo apt install libgsl-dev
+    su]do apt install libgsl-dev
 
 ## yt  (ZuHone)
 	
@@ -172,6 +172,11 @@ UNIX LIBRARIES:
 
   see also additional files in pitp2016/Gammie
 
+  For some version of mac (e.g. using brew) you may find that gsl has been installed in /usr/local
+  instead of /usr.  In that case the -I/usr/local/include and -L/usr/local/lib flags may need to
+  be added to the Makefile CFLAGS and LDFLAGS macros resp.
+  Also, for some of those I've seen the compiler is called gcc-6, so change CC=gcc-6 to fix the
+  the compilation
 
 ## tristan (Spitovsky) 
 
