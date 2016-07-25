@@ -162,8 +162,12 @@ UNIX LIBRARIES:
 
 ## iharm2d_v3 (Gammie)
 
-  GitHub repo: https://github.com/AFD-Illinois/iharm2d_v3
+  GitHub repo 1: https://github.com/AFD-Illinois/iharm2d_v3
+
+  GitHub repo 2: https://github.com/AFD-Illinois/ibothros3d
+
   see also additional files in pitp2016/Gammie
+
 
 ## tristan (Spitovsky) 
 
