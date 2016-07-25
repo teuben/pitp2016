@@ -14,6 +14,7 @@ PROGRAM ADERDG3D
   ! We first need to compute the relevant matrices, set initial
   ! conditions and prepare some necessary stuff...  
   CALL ADERDGInit 
+  CALL WriteDataGnuplot
   CALL CPU_TIME(tCPU1) 
   ! Main loop in time 
   DO timestep = 1, NMAX
