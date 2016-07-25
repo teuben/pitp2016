@@ -11,6 +11,11 @@ Please read http://www.sns.ias.edu/computing/servers carefully where you
 should and should not compute.
 
 
+Example copying files from laptop to cluster
+    scp readme pitp80@ssh.sns.ias.edu:/data/pitp/pitp80
+
+Example copying file from cluster to laptop :
+    scp pitp80@ssh.sns.ias.edu:/data/pitp/pitp80/run1.dat .
 
 --------------------------------------------------------------------------------
 UNIX COMMANDS:
@@ -92,10 +97,6 @@ UNIX LIBRARIES:
     brew install gcc
     brew install openmpi --enable-mpi-thread-multiple
     brew install hdf5 --with-fortran --with-mpi
-
-  but I've also seen this reported to work:
-
-    brew install homebrew/science/hdf5 --with-fortran --with-mpi
 
 ## mpich
 
