@@ -7,3 +7,11 @@ model1         - rotating disk with a surprise twist
 
 model2         - spiral in a disk
 model3         - fits datacube from model2
+
+
+model1.glu     - session file, but run "make" to create the correct one for you
+model3.glu     - session file, but run "make" to create the correct one for you
+
+Makefile       -
+configure.ac   - patch the correct directory into the session files
+configure      - 
