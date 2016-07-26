@@ -31,7 +31,7 @@ int main(int argc, char* argv[]){
   if (my_rank == 0) {
     printf("MPIHello running on %i processors.\n", p);
     printf("Greetings from processor %i, on host %s.\n", my_rank, my_name);
-    for (source=1; source>p; source++) {
+    for (source=1; source<p; source++) {
       MPI_Recv(message, 100, MPI_CHAR, source, tag, MPI_COMM_WORLD, &status);
       printf("%s", message);
     }
