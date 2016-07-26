@@ -8,7 +8,8 @@ have an account. Look in /data/pitp/software.
 If you want to work on one of the cluster nodes, be sure to create your
 own directory within /data/pitp/ and work within that.
 Please read http://www.sns.ias.edu/computing/servers carefully where you
-should and should not compute.
+should and should not compute. Use the commands qsub/qstat/qalter/qresub
+to manage jobs that need resources.
 
 
 Example copying files from laptop to cluster
@@ -33,6 +34,9 @@ UNIX COMMANDS:
 
     cd pitp2016
     git pull
+
+  See also Lupton's talk and his github repo on:
+  https://github.com/RobertLuptonTheGood/APC524GitLecture
 
 
 ## gcc/g++/gfortran
@@ -112,7 +116,7 @@ UNIX LIBRARIES:
   This is the Gnu Scientific Library. Use your package manager to install it, e.g.  
   In Ubuntu linux:
             
-    su]do apt install libgsl-dev
+    sudo apt install libgsl-dev
 
 ## yt  (ZuHone)
 	
