@@ -1,0 +1,22 @@
+Focus Sessions
+--------------
+
+Some of the free evenings we assembled in Peyton Hall from 8pm-930pm
+(often this was 10pm) and under guidance of a suggestion sheet students
+would maintain, discuss and demo topic of their interest.
+
+Week 1:
+-------
+
+tue (~30)  intro to python/jupyter  - 
+           using  miniconda3 and /notebooks/python-*ipynb files [Teuben]
+wed (~40)  git.txt [Teuben] and /yt-demo [ZuHone]
+thu (~50)  /examples/finkel-test1.c [Finkel]
+
+Week 2:
+-------
+
+mon (~20) /yt-volume-rendering [Suqing] and 
+          /glue  [Teuben]
+wed 
+
