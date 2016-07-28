@@ -17,7 +17,16 @@ python examples:
 
 
 C example:
-       taken from NEMO http://carma.astro.umd.edu/nemo/
+       code examples taken from NEMO package     http://carma.astro.umd.edu/nemo/
+
+       # interesting (intel only) clock cycle routine in
+       
+       more $NEMO/src/kernel/misc/timers.c
+       man timers
+
+
+
+
        cd $NEMO/src/nbody/evolve/hackcode/hackcode1
        make hackcode1 CC="gcc -pg"
        hackcode1 nbody=1000
