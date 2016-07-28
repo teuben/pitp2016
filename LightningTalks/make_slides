@@ -2,22 +2,27 @@
 #
 #   paste a series of pdf files into a single PDF, but
 #   add a title (filename) before each PDF.
-#   
+#
+
+#  in the end this method didn't work, slides mixed landscape and portrait, and scaling
+#  depending how it was created... solution: simple file browser
 
 
-set out=AAA_Final.pdf
+set out=.final.pdf
 
 # accumulate titles and actual pdfs
 set pdf=()
 
+mkdir -p tmp
+
 foreach file ($*)
    set name = $file:r
-   echo $name > .$name.title
-   enscript -r -B -fCourier60 .$name.title -o .$name.title.ps
-   ps2pdf .$name.title.ps .$name.title.pdf
-   set pdf=($pdf .$name.title.pdf $file)
+   echo $name > tmp/$name.title
+   enscript -B -fCourier48 tmp/$name.title -o tmp/$name.title.ps
+   ps2pdf tmp/$name.title.ps tmp/$name.title.pdf
+   set pdf=($pdf tmp/$name.title.pdf $file)
 end
 
 echo $pdf
 
-pdfjoin $pdf -o final.pdf
+pdfjoin $pdf -o $out
